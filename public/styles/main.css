@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --text-light-opacity: hsla(210, 46%, 95%, 0.5);
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 0;
+}
+
+main {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card {
+  background-color: var(--moderate-violet);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 2rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.card .user {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1.6rem;
+}
+
+.card .user .user-photo {
+  width: 38px;
+  height: 38px;
+  border: 2.5px solid var(--light-gray);
+  border-radius: 50%;
+  margin-right: 1.15rem;
+}
+
+.card .user .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .user .user-info .user-name {
+  color: var(--light-grayish-blue);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+.card .user .user-info .verified {
+  color: var(--text-light-opacity);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+.card .title {
+  width: 100%;
+  color: var(--light-grayish-blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: start;
+  letter-spacing: 0.03rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.43rem;
+  padding-right: 0.5rem;
+}
+
+.card .main-text {
+  color: var(--text-light-opacity);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.45rem;
+  padding-right: 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */

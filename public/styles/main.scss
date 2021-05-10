@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --text-light-opacity: hsla(210, 46%, 95%, 0.5);
+
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 3rem 0;
+
+}
+
+main {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.card {
+  background-color: var(--moderate-violet);
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 1.5rem 2rem 2rem;
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+
+  .user {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 1.6rem;
+
+    .user-photo {
+      width: 38px;
+      height: 38px;
+
+      border: 2.5px solid var(--light-gray);
+      border-radius: 50%;
+
+      margin-right: 1.15rem;
+    }
+
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .user-name {
+        color: var(--light-grayish-blue);
+        font-size: 1.05rem;
+        font-weight: 500;
+        letter-spacing: 0.04rem;
+
+      }
+
+      .verified {
+        color: var(--text-light-opacity);
+        font-size: 0.95rem;
+        font-weight: 500;
+        letter-spacing: 0.02rem;
+
+      }
+    }
+  }
+
+  .title {
+    width: 100%;
+
+    color: var(--light-grayish-blue);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: start;
+    letter-spacing: 0.03rem;
+    line-height: 1.8rem;
+
+    margin-bottom: 1.43rem;
+    padding-right: 0.5rem;
+
+  }
+
+  .main-text {
+    color: var(--text-light-opacity);
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.45rem;
+
+    padding-right: 0.5rem;
+
+  }
+}
