@@ -17,7 +17,7 @@
   }
 
   main {
-    max-width: 1600px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -31,6 +31,17 @@
     max-width: none;
     height: 100%;
     margin: 0;
+
+    .title {
+      font-size: 1.5rem;
+      padding-right: 0;
+
+    }
+
+    .main-text {
+      font-size: 1.00rem;
+      padding-right: 0;
+    }
   }
 
   .card--1 {

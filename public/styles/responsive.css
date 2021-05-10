@@ -18,7 +18,7 @@
     padding: 2rem 0 1rem;
   }
   main {
-    max-width: 1600px;
+    max-width: 1400px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -32,6 +32,14 @@
     max-width: none;
     height: 100%;
     margin: 0;
+  }
+  .card .title {
+    font-size: 1.5rem;
+    padding-right: 0;
+  }
+  .card .main-text {
+    font-size: 1.00rem;
+    padding-right: 0;
   }
   .card--1 {
     -ms-grid-row: 1;
