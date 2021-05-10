@@ -1,0 +1,65 @@
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 0 1rem;
+  }
+  main {
+    max-width: 1600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+        grid-template-areas: 'card-1 card-1 card-2 card-5' 'card-3 card-4 card-4 card-5';
+  }
+  .card {
+    max-width: none;
+    height: 100%;
+    margin: 0;
+  }
+  .card--1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card-1;
+  }
+  .card--2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: card-2;
+  }
+  .card--3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: card-3;
+  }
+  .card--4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: card-4;
+  }
+  .card--5 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: card-5;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
