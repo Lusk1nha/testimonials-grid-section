@@ -17,6 +17,7 @@
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
   --text-light-opacity: hsla(210, 46%, 95%, 0.5);
+  --text-dark-opacity: hsl(219, 29%, 14%, 0.5);
 }
 
 body {
@@ -31,7 +32,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem 0 1rem;
 }
 
 main {
@@ -52,7 +53,7 @@ main {
 }
 
 .card {
-  background-color: var(--moderate-violet);
+  background-color: white;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,6 +88,10 @@ main {
 }
 
 .card .user .user-photo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  image-rendering: crisp-edges;
   width: 38px;
   height: 38px;
   border: 2.5px solid var(--light-gray);
@@ -113,7 +118,7 @@ main {
 .card .user .user-info .user-name {
   color: var(--light-grayish-blue);
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.04rem;
 }
 
@@ -142,5 +147,37 @@ main {
   font-weight: 500;
   line-height: 1.45rem;
   padding-right: 0.5rem;
+}
+
+.card.light .user .user-photo {
+  border: 0;
+}
+
+.card.light .user .user-info .user-name {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card.light .user .user-info .verified {
+  color: var(--text-dark-opacity);
+}
+
+.card.light .title {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card.light .main-text {
+  color: var(--text-dark-opacity);
+}
+
+.card--1 {
+  background-color: var(--moderate-violet);
+}
+
+.card--2 {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card--4 {
+  background-color: var(--very-dark-blackish-blue);
 }
 /*# sourceMappingURL=main.css.map */
